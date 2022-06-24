@@ -199,7 +199,7 @@ img {
 <button class="accordion">¿Dónde te encuentras?</button>
 <div class="panel">
   <p>Nuestro estudio está ubicado en Heredia cerca de la ESPH. Una vez que haya reservado una cita, le enviaremos la dirección junto con la información de preparación para su cita.</p>
-</div>
+</div>  
 
 
 <button class="accordion">¿Qué formas de pago aceptan?</button>
