@@ -76,7 +76,7 @@ img {
 </head>
 <body>
 
-    <img src="vista/img/Fondo2.jpg" width="460" height="345">
+    <img src="vistas/img/Fondo2.jpg" width="460" height="345">
 <div class="bg">
 <!-- Links (sit on top) -->
 <div class="w3-top">
