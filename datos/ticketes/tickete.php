@@ -1,5 +1,5 @@
 <?php
-
+require 'cliente.php'; 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/PHPClass.php to edit this template
@@ -13,11 +13,18 @@
 class tickete {
     //put your code here
     public $idTickete;
+    public $cliente;
     public $descripcionTatuaje;
     public $tamanho;  
     public $parteDelCuerpo;
     public $autorizo;
     public $leido;  
+    public function __construct($show, $character) {
+    $this->show = $show;
+    $this->character = $character;
+  }
+  
+  
     public function getIdTickete() {
         return $this->idTickete;
     }
