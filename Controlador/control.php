@@ -1,5 +1,6 @@
-<?php include 'mysqlConnection.php';?>
 <?php
+require 'gestionCliente.php'; 
+require 'gestionTickete.php'; 
 //INSERTA CLIENTE---------------------------------------------->
 // Create connection
 $connect = new mysqli($hostname, $username, $password, $databaseName);
