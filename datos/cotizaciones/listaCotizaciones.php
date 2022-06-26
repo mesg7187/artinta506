@@ -55,8 +55,9 @@
             if ($result->num_rows > 0) {
 // output data of each row
                 while ($row = $result->fetch_assoc()) {
+                    $val = $row['idCotizacion'];
                     echo "<tr>"
-                    . "<td><button onclick='function()' type='button' name='delete_btn' data-id1='" . $row['idCotizacion'] . "''>Abrir</button></td>
+                    . "<td><button onclick='myFunction($val)'  type='button'>Abrir</button></td>
                     <td>" . $row["idCotizacion"] . "</td><td>" . $row["estado"] . "</td><td>" . $row["fechaHoraCreacion"] . "</td>"
                     . "<td>" . $row["fechaHoraRespuesta"] . "</td><td>" . $row["nombre"] . "</td><td>" . $row["primerApellido"] . "</td>"
                     . "<td>" . $row["segundoApellido"] . "</td><td>" . $row["email"] . "</td><td>" . $row["numeroTelefonico"] . "</td>"
@@ -73,12 +74,13 @@
         </table>
 
         <script>
-            function () {
-                alert ('hola');
-                var id = $(this).data("id1");
-                location.replace("https://www.w3schools.com");
+            function myFunction(val) {
+                alert("Abrir"+val+"?");
+                location.replace("/vistas/viewTicket.php?cotizacion=" + val);
             }
 
         </script>
+
+
     </body>
 </html>

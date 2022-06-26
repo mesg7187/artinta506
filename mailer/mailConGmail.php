@@ -6,7 +6,7 @@
     </head>
     <body>
         <div class="wrapper">
-            <form method="post" action="mail2.php">
+            <form method="post" action="mailCotizacion.php">
                 <h2>Gmail Sender App</h2><br>
                 Email To :<br>
                 <input type="text" name="email"><br>
@@ -37,6 +37,8 @@
 
             //para quitar acccesso https://myaccount.google.com/security-checkup/3?rfn=325&rfnc=1&et=0&pli=1&continue=https%3A%2F%2Fmyaccount.google.com%2Fsecurity%3Fauthuser%3D0
             //App scripts https://script.google.com/home/projects/1zzC9zObCosdrAAqCb7a3latydPS65cwbxrmwODEh_G3bC8TiDU83p-kF/edit
+
+       
             ?>
         </div>
 
