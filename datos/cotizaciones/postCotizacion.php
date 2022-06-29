@@ -3,7 +3,7 @@
 require '../../datos/mysqlConnection.php';
 require '../../mailer/mailCotizacion.php';
 date_default_timezone_set("America/Costa_Rica");
-$idCotizacion = date("Y-m-dh:i:sa") . '-' . mt_rand();
+$idCotizacion = date("Ymdhis") . '-' . mt_rand();
 $estado = "abierto";
 $fechaHoraCreacion = date("Y-m-d h:i:sa");
 $fechaHoraRespuesta = " ";
@@ -25,7 +25,7 @@ $body = "Un saludo de parte de Artinta506,    "
         . "En este momento estamos analizando su solicitud de tatuaje con la siguiente description:  "
         . ""
         . "" . $descripcionTatuaje;
-/*
+
   $conn = new mysqli($hostname, $username, $password, $databaseName);
 
   $sql = "INSERT INTO cotizacion(idCotizacion,estado,fechaHoraCreacion,fechaHoraRespuesta,nombre,primerApellido,segundoApellido,email,numeroTelefonico,descripcionTatuaje,tamanho,parteDelCuerpo,preferenciasCovid,disponibilidad,autorizo,leido) VALUES
@@ -39,7 +39,7 @@ $body = "Un saludo de parte de Artinta506,    "
   echo("COTIZACION NO GURADADA CON ERROR->" . mysqli_error($conn));
   }
   $conn->close();
- */
+ 
 //header("Location: /mailer/mailCotizacion.php?email=".$email."&subject=S&body=B");
 //exit();
 
