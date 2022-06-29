@@ -365,7 +365,22 @@
                     <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Cotizar</span>
                 </div>
 
-                <form class="w3-container" method="post" action="/datos/cotizaciones/postCotizacion.php"">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <form enctype="multipart/form-data"  method="POST" action="/datos/cotizaciones/postCotizacion.php" class="w3-container" >
                     <div class="w3-section">
                         <label>Nombre</label>
                         <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="nombre" required>
@@ -390,6 +405,15 @@
                         <label>Descripcion del Tatuaje</label>
                         <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="descripcionTatuaje"required >
                     </div>
+
+                    <div class="w3-section">
+                        <label>imagen referencia1</label>
+                        <input type="hidden" name="size" value="1000000">
+                        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="file" name="image1" >
+                        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="file" name="image2" >
+                        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="file" name="image3" >
+                    </div>
+
                     <div class="w3-section">
                         <label>Tamanho aproximado en centimetros</label>
                         <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="tamanho" required>
@@ -413,9 +437,8 @@
                             <div class="w3-section">
                                 <input type="checkbox" name="leido" value="1"required >He ledio los terminos y condiciones.
                                 <div>
-                                    <button type="submit" class="w3-button w3-block w3-black">Send</button>
+                                    <button type="submit" name="upload"class="w3-button w3-block w3-black">Send</button>
                                     </form>
-
                                 </div>
 
                                 <!-- Footer -->
@@ -430,41 +453,6 @@
                                     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
                                 </footer>
 
-
-                                <script>
-                                // Slideshow
-                                    var slideIndex = 1;
-                                    showDivs(slideIndex);
-
-                                    function plusDivs(n) {
-                                        showDivs(slideIndex += n);
-                                    }
-
-                                    function currentDiv(n) {
-                                        showDivs(slideIndex = n);
-                                    }
-
-                                    function showDivs(n) {
-                                        var i;
-                                        var x = document.getElementsByClassName("mySlides");
-                                        var dots = document.getElementsByClassName("demodots");
-                                        if (n > x.length) {
-                                            slideIndex = 1
-                                        }
-                                        if (n < 1) {
-                                            slideIndex = x.length
-                                        }
-                                        ;
-                                        for (i = 0; i < x.length; i++) {
-                                            x[i].style.display = "none";
-                                        }
-                                        for (i = 0; i < dots.length; i++) {
-                                            dots[i].className = dots[i].className.replace(" w3-white", "");
-                                        }
-                                        x[slideIndex - 1].style.display = "block";
-                                        dots[slideIndex - 1].className += " w3-white";
-                                    }
-                                </script>
 
 
 

@@ -1,3 +1,5 @@
+SOLO PARA RESPALDO 
+
 <?php
   // Create database connection
   $db = mysqli_connect("localhost", "root", "M@rio741", "artinta506");
@@ -17,7 +19,7 @@
   	// image file directory
   	$target = "images/".basename($image);
 
-  	$sql = "INSERT INTO images (image, image_text) VALUES ('$image', '$image_text')";
+  	$sql = "INSERT INTO images (image, idCotizacion) VALUES ('$image', '$image_text')";
   	// execute query
   	mysqli_query($db, $sql);
 
@@ -75,7 +77,7 @@
       echo "</div>";
     }
   ?>
-  <form method="POST" action="index.php" enctype="multipart/form-data">
+  <form method="POST" action="saveImages.php" enctype="multipart/form-data">
   	<input type="hidden" name="size" value="1000000">
   	<div>
   	  <input type="file" name="image">
@@ -95,3 +97,18 @@
 </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
