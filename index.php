@@ -409,9 +409,9 @@
                     <div class="w3-section">
                         <label>imagen referencia1</label>
                         <input type="hidden" name="size" value="1000000">
-                        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="file" name="image1" >
-                        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="file" name="image2" >
-                        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="file" name="image3" >
+                        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" value= " "type="file" name="image1" >
+                        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" value= " "type="file" name="image2" >
+                        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" value= " "type="file" name="image3" >
                     </div>
 
                     <div class="w3-section">

@@ -1,6 +1,6 @@
 SOLO PARA RESPALDO 
 
-<?php
+<?php 
   // Create database connection
   $db = mysqli_connect("localhost", "root", "M@rio741", "artinta506");
 
