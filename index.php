@@ -106,6 +106,11 @@
                     <div class="w3-col s3">
                         <a href="#contact" class="w3-button w3-block">Cotizar</a>
                     </div>
+
+                    <div class="w3-col s3">
+                        <a href="datos/cotizaciones/listaCotizaciones.php" class="w3-button w3-block">Lista cotizaciones</a>
+                    </div>
+
                 </div>
             </div>
 
@@ -146,6 +151,7 @@
                             <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
                             <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
                             <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                            
                         </div>
                     </div>
                 </div>
@@ -412,6 +418,7 @@
                         <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" value= " "type="file" name="image1" >
                         <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" value= " "type="file" name="image2" >
                         <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" value= " "type="file" name="image3" >
+                        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" value= " "type="file" name="image4" >
                     </div>
 
                     <div class="w3-section">
@@ -444,8 +451,9 @@
                                 <!-- Footer -->
 
                                 <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-                                    <h4>Footer</h4>
-                                    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+                          
+                                                    <h4>No aceptamos por el momento: <i class = "fa fa-credit-card w3-large"></i> <i class = "fa fa-cc-mastercard w3-large"></i> <i class = "fa fa-cc-amex w3-large"></i> <i class = "fa fa-cc-cc-visa w3-large"></i><i class = "fa fa-cc-paypal w3-large"></i></h4>
+                                    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Volver arriba</a>
                                     <div class="w3-xlarge w3-section">
                                         <i class="fa fa-facebook-official w3-hover-opacity"></i>
                                         <i class="fa fa-instagram w3-hover-opacity"></i>

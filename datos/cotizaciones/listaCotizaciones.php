@@ -26,14 +26,10 @@
             <tr>
                 <th>link</th>
                 <th>Id</th>
+                <th>Id Cliente</th>
                 <th>Estado</th>
                 <th>Creacion</th>
                 <th>Respuesta</th>
-                <th>Nombre</th>
-                <th>Primer Apellido</th>
-                <th>Segundo Apellido</th>
-                <th>Email</th>
-                <th>Numero Telefonico</th>
                 <th>Descripcion</th>
                 <th>Tamanho</th><!-- comment -->
                 <th>Parte del Cuerpo a tatuar</th>
@@ -58,11 +54,17 @@
                     $val = $row['idCotizacion'];
                     echo "<tr>"
                     . "<td><button onclick='myFunction($val)'  type='button'>Abrir</button></td>
-                    <td>" . $row["idCotizacion"] . "</td><td>" . $row["estado"] . "</td><td>" . $row["fechaHoraCreacion"] . "</td>"
-                    . "<td>" . $row["fechaHoraRespuesta"] . "</td><td>" . $row["nombre"] . "</td><td>" . $row["primerApellido"] . "</td>"
-                    . "<td>" . $row["segundoApellido"] . "</td><td>" . $row["email"] . "</td><td>" . $row["numeroTelefonico"] . "</td>"
-                    . "<td width='30%' >" . $row["descripcionTatuaje"] . "</td><td>" . $row["tamanho"] . "</td><td>" . $row["parteDelCuerpo"] . "</td>"
-                    . "<td width='30%' >" . $row["preferenciasCovid"] . "</td></td>" . "<td width='30%'>" . $row["disponibilidad"] . "</td><td>" . $row["autorizo"] . "</td>"
+                    <td>" . $row["idCotizacion"] . "</td>"
+                    . "<td>" . $row["idCliente"] . "</td>"
+                    . "<td>" . $row["estado"] . "</td>"
+                    . "<td>" . $row["fechaHoraCreacion"] . "</td>"
+                    . "<td>" . $row["fechaHoraRespuesta"] . "</td>"
+                    . "<td width='30%' >" . $row["descripcionTatuaje"] . "</td>"
+                    . "<td>" . $row["tamanho"] . "</td>"
+                    . "<td>" . $row["parteDelCuerpo"] . "</td>"
+                    . "<td width='30%' >" . $row["preferenciasCovid"] . "</td>"
+                    . "<td>" . "<td width='30%'>" . $row["disponibilidad"] . "</td>"
+                    . "<td>" . $row["autorizo"] . "</td>"
                     . "<td>" . $row["leido"] . "</td></tr>";
                 }
                 echo "</table>";
@@ -75,8 +77,8 @@
 
         <script>
             function myFunction(val) {
-                alert("Abrir"+val+"?");
-                location.replace("/vistas/viewTicket.php?cotizacion=" + val);
+              //  alert("Abrir" + val + "?");
+                location.replace("/vistas/viewCotizacion.php?cotizacion=" + val);
             }
 
         </script>

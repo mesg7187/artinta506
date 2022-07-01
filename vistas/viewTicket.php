@@ -11,6 +11,9 @@
             html,body,h1,h2,h3,h4,h5,h6 {
                 font-family: "Roboto", sans-serif
             }
+            .w3-teal, .w3-hover-teal:hover {background-color:#696969;}
+
+
         </style>
 
         <?php
@@ -66,14 +69,14 @@
                         <div class="w3-display-container">
                             <img src="/vistas/img/PersonIcon.jpg" style="width:100%" alt="Avatar">
                             <div class="w3-display-bottomleft w3-container w3-text-black">
-                                <h2><?php echo $nombre; ?> <?php echo $primerApellido; ?><?php echo $segundoApellido ;     ?></h2>
+                                <h2><?php echo $nombre; ?> <?php echo $primerApellido; ?><?php echo $segundoApellido; ?></h2>
                             </div>
                         </div>
                         <div class="w3-container">
-                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Id</p>
+                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal "></i>Id</p>
                             <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Provincia</p>
-                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $email?></p>
-                            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $numeroTelefonico?></p>
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $email ?></p>
+                            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $numeroTelefonico ?></p>
                             <hr>
                             <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Cotizacion      </b></p>
                             <p class="w3-large"><b><i class="w3-center w3-text-white"></i>ID   :</b><?php echo $idCotizacion ?> </p>
@@ -110,13 +113,15 @@
                             <p><b>Referencias</b></p>
 
                             <p>   <?php
-                              $result = mysqli_query($conn, "SELECT * FROM images WHERE idCotizacion=". $idCotizacion);
+                                $result = mysqli_query($conn, "SELECT * FROM images WHERE idCotizacion=" . $idCotizacion);
+                                
                                 while ($row = mysqli_fetch_array($result)) {
-                                    if ($row['id']!=" "){
-                                    echo $row['image'];
-                                    echo "<div id='img_div'>";
-                                    echo "<img src='../datos/cotizaciones/images/". $idCotizacion ."/". $row['image'] . "' >";
-                                    echo "</div>";}
+                                    if ($row['id'] != " ") {
+                                        echo $row['image'];
+                                        echo "<div id='img_div'>";
+                                        echo "<img src='../datos/cotizaciones/images/" . $idCotizacion . "/" . $row['image'] . "' >";
+                                        echo "</div>";
+                                    }
                                 }
                                 ?></p>
 

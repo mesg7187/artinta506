@@ -3,18 +3,20 @@
 require '../../datos/mysqlConnection.php';
 require '../../mailer/mailCotizacion.php';
 date_default_timezone_set("America/Costa_Rica");
-$idCotizacion = intval( date("Ymdhs") .(rand(10,100)));
-echo $idCotizacion;
-//$idCotizacion = 1;
-//$idCotizacion = intval( date("Ymdhis"));
-$estado = "abierto";
-$fechaHoraCreacion = date("Y-m-d h:i:sa");
-$fechaHoraRespuesta = " ";
+
+//////////CLIENTE INFO/////////////////
+$idCliente = intval( date("Ymdhs") .(rand(10,100)));
 $nombre = $_POST['nombre'];
 $primerApellido = $_POST['primerApellido'];
 $segundoApellido = $_POST['segundoApellido'];
 $email = $_POST['email'];
 $numeroTelefonico = $_POST['numeroTelefonico'];
+
+//////////COTIZACION INFO/////////////////
+$idCotizacion = intval( date("Ymdhs") .(rand(10,100)));
+$estado = "abierto";
+$fechaHoraCreacion = date("Y-m-d h:i:sa");
+$fechaHoraRespuesta = " ";
 $descripcionTatuaje = $_POST['descripcionTatuaje'];
 $tamanho = $_POST['tamanho'];
 $parteDelCuerpo = $_POST['parteDelCuerpo'];
@@ -23,16 +25,35 @@ $disponibilidad = $_POST['disponibilidad'];
 $autorizo = $_POST['autorizo'];
 $leido = $_POST['leido'];
 
+//////////EMAIL INFO/////////////////
 $subject = "Cotizacion de " . $idCotizacion . " para tatuaje con Artinta506";
 $body = "Un saludo de parte de Artinta506,    "
         . "En este momento estamos analizando su solicitud de tatuaje con la siguiente description:  "
         . ""
         . "" . $descripcionTatuaje;
 
-$conn = new mysqli($hostname, $username, $password, $databaseName);
 
-$sql = "INSERT INTO cotizacion(idCotizacion,estado,fechaHoraCreacion,fechaHoraRespuesta,nombre,primerApellido,segundoApellido,email,numeroTelefonico,descripcionTatuaje,tamanho,parteDelCuerpo,preferenciasCovid,disponibilidad,autorizo,leido) VALUES
-  ('". $GLOBALS["idCotizacion"] . "', '" . $GLOBALS["estado"] . "', '" . $GLOBALS["fechaHoraCreacion"] . "', '" . $GLOBALS["fechaHoraRespuesta"] . "', '" . $GLOBALS["nombre"] . "', '" . $GLOBALS["primerApellido"] . "', '" . $GLOBALS["segundoApellido"] . "', '" . $GLOBALS["email"] . "', '" . $GLOBALS["numeroTelefonico"] . "', '" . $GLOBALS["descripcionTatuaje"] . "', '" . $GLOBALS["tamanho"] . "', '" . $GLOBALS["parteDelCuerpo"] . "', '" . $GLOBALS["preferenciasCovid"] . "', '" . $GLOBALS["disponibilidad"] . "', '" . $GLOBALS["autorizo"] . "', '" . $GLOBALS["leido"] . "')";
+
+
+
+//////////INSERT CLIENTE /////////////////
+$conn = new mysqli($hostname, $username, $password, $databaseName);
+$sql = "INSERT INTO cliente(idCliente,nombre,primerApellido,segundoApellido,email,numeroTelefonico) VALUES
+  ('". $GLOBALS["idCliente"] . "', '" . $GLOBALS["nombre"] . "', '" . $GLOBALS["primerApellido"] . "', '" . $GLOBALS["segundoApellido"] . "', '" . $GLOBALS["email"] . "', '" . $GLOBALS["numeroTelefonico"] ."')";
+
+if (mysqli_query($conn, $sql)) {
+    echo 'CLIENTE GUARDADO';
+    // header("Location: /mailer/mailCotizacion.php?email=".$email."&subject=".$subject."&body=".$body);
+} else {
+
+    echo("CLIENTE NO GURADADO CON ERROR->" . mysqli_error($conn));
+}
+$conn->close();
+
+//////////INSERT COTIZACION/////////////////
+$conn = new mysqli($hostname, $username, $password, $databaseName);
+$sql = "INSERT INTO cotizacion(idCotizacion,idCliente, estado,fechaHoraCreacion,fechaHoraRespuesta,descripcionTatuaje,tamanho,parteDelCuerpo,preferenciasCovid,disponibilidad,autorizo,leido) VALUES
+  ('". $GLOBALS["idCotizacion"] . "', '". $GLOBALS["idCliente"] . "', '" . $GLOBALS["estado"] . "', '" . $GLOBALS["fechaHoraCreacion"] . "', '" . $GLOBALS["fechaHoraRespuesta"] . "', '" . $GLOBALS["descripcionTatuaje"] . "', '" . $GLOBALS["tamanho"] . "', '" . $GLOBALS["parteDelCuerpo"] . "', '" . $GLOBALS["preferenciasCovid"] . "', '" . $GLOBALS["disponibilidad"] . "', '" . $GLOBALS["autorizo"] . "', '" . $GLOBALS["leido"] . "')";
 
 if (mysqli_query($conn, $sql)) {
     echo 'COTIZACION GUARDADA';
@@ -43,11 +64,14 @@ if (mysqli_query($conn, $sql)) {
 }
 $conn->close();
 
+//////////ENVIA EMAIL/////////////////
 //header("Location: /mailer/mailCotizacion.php?email=".$email."&subject=S&body=B");
 //exit();
 
-if (isset($_POST['upload'])) {
+
+//////////INSERT IMAGEN/////////////////
     //=========================SUBIR IMAGEN 1================================
+if (isset($_POST['upload'])) {
     $conn = new mysqli($hostname, $username, $password, $databaseName);
 
     mkdir("images/" . $idCotizacion . "/"); //CREA EL SUB DIRECTORIO
@@ -103,6 +127,27 @@ if (isset($_POST['upload'])) {
     mysqli_query($conn, $sql);
 
     if (move_uploaded_file($_FILES['image3']['tmp_name'], $target)) {
+        echo 'IMAGEN GUARDADA ';
+        $msg = "Image uploaded successfully";
+    } else {
+        $msg = "FALLO AL GUARDAR IMAGEN";
+    }
+    $conn->close();
+        //=========================SUBIR IMAGEN 4================================
+    $conn = new mysqli($hostname, $username, $password, $databaseName);
+
+    mkdir("images/" . $idCotizacion . "/");
+    $image = $_FILES['image4']['name'];
+// Get text
+//$image_text = mysqli_real_escape_string($db, $idCotizacion);
+// image file directory
+    $target = "images/" . $idCotizacion . "/" . basename($image);
+
+    $sql = "INSERT INTO images (image, idCotizacion) VALUES ('$image', '$idCotizacion')";
+// execute query
+    mysqli_query($conn, $sql);
+
+    if (move_uploaded_file($_FILES['image4']['tmp_name'], $target)) {
         echo 'IMAGEN GUARDADA ';
         $msg = "Image uploaded successfully";
     } else {
