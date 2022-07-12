@@ -42,11 +42,11 @@ $sql = "INSERT INTO cliente(idCliente,nombre,primerApellido,segundoApellido,emai
   ('". $GLOBALS["idCliente"] . "', '" . $GLOBALS["nombre"] . "', '" . $GLOBALS["primerApellido"] . "', '" . $GLOBALS["segundoApellido"] . "', '" . $GLOBALS["email"] . "', '" . $GLOBALS["numeroTelefonico"] ."')";
 
 if (mysqli_query($conn, $sql)) {
-    echo 'CLIENTE GUARDADO';
+    //echo 'CLIENTE GUARDADO';
     // header("Location: /mailer/mailCotizacion.php?email=".$email."&subject=".$subject."&body=".$body);
 } else {
 
-    echo("CLIENTE NO GURADADO CON ERROR->" . mysqli_error($conn));
+   // echo("CLIENTE NO GURADADO CON ERROR->" . mysqli_error($conn));
 }
 $conn->close();
 
@@ -56,11 +56,11 @@ $sql = "INSERT INTO cotizacion(idCotizacion,idCliente, estado,fechaHoraCreacion,
   ('". $GLOBALS["idCotizacion"] . "', '". $GLOBALS["idCliente"] . "', '" . $GLOBALS["estado"] . "', '" . $GLOBALS["fechaHoraCreacion"] . "', '" . $GLOBALS["fechaHoraRespuesta"] . "', '" . $GLOBALS["descripcionTatuaje"] . "', '" . $GLOBALS["tamanho"] . "', '" . $GLOBALS["parteDelCuerpo"] . "', '" . $GLOBALS["preferenciasCovid"] . "', '" . $GLOBALS["disponibilidad"] . "', '" . $GLOBALS["autorizo"] . "', '" . $GLOBALS["leido"] . "')";
 
 if (mysqli_query($conn, $sql)) {
-    echo 'COTIZACION GUARDADA';
-    // header("Location: /mailer/mailCotizacion.php?email=".$email."&subject=".$subject."&body=".$body);
+   // echo 'COTIZACION GUARDADA';
+   header("Location: /mailer/mailCotizacion.php?email=".$email."&subject=".$subject."&body=".$body);
 } else {
 
-    echo("COTIZACION NO GURADADA CON ERROR->" . mysqli_error($conn));
+   // echo("COTIZACION NO GURADADA CON ERROR->" . mysqli_error($conn));
 }
 $conn->close();
 
@@ -83,7 +83,7 @@ if (isset($_POST['upload'])) {
     mysqli_query($conn, $sql); //HACE LA INSERSION EN LA DB
 
     if (move_uploaded_file($_FILES['image1']['tmp_name'], $target)) {//MANDA LA IMAGEN AL FOLDER QUE PUSIMOS EN EL TARGET
-        echo 'IMAGEN GUARDADA ';
+     //   echo 'IMAGEN GUARDADA ';
         $msg = "Image uploaded successfully";
     } else {
         $msg = "FALLO AL GUARDAR IMAGEN";
@@ -105,7 +105,7 @@ if (isset($_POST['upload'])) {
     mysqli_query($conn, $sql);
 
     if (move_uploaded_file($_FILES['image2']['tmp_name'], $target)) {
-        echo 'IMAGEN GUARDADA ';
+      //  echo 'IMAGEN GUARDADA ';
         $msg = "Image uploaded successfully";
     } else {
         $msg = "FALLO AL GUARDAR IMAGEN";
@@ -127,7 +127,7 @@ if (isset($_POST['upload'])) {
     mysqli_query($conn, $sql);
 
     if (move_uploaded_file($_FILES['image3']['tmp_name'], $target)) {
-        echo 'IMAGEN GUARDADA ';
+      //  echo 'IMAGEN GUARDADA ';
         $msg = "Image uploaded successfully";
     } else {
         $msg = "FALLO AL GUARDAR IMAGEN";
@@ -148,11 +148,41 @@ if (isset($_POST['upload'])) {
     mysqli_query($conn, $sql);
 
     if (move_uploaded_file($_FILES['image4']['tmp_name'], $target)) {
-        echo 'IMAGEN GUARDADA ';
-        $msg = "Image uploaded successfully";
+     //  echo 'IMAGEN GUARDADA ';
+      //  $msg = "Image uploaded successfully";
     } else {
         $msg = "FALLO AL GUARDAR IMAGEN";
     }
     $conn->close();
 }
 ?>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:700' rel='stylesheet' type='text/css'>
+	<style>
+		@import url(//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css);
+		@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+	</style>
+	<link rel="stylesheet" href="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/default_thank_you.css">
+	<script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/jquery-1.9.1.min.js"></script>
+	<script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/html5shiv.js"></script>
+</head>
+<body>
+	<header class="site-header" id="header">
+		<h1 class="site-header__title" data-lead-id="site-header-title">Gracias</h1>
+	</header>
+
+	<div class="main-content">
+		<i class="fa fa-check main-content__checkmark" id="checkmark"></i>
+		<p class="main-content__body" data-lead-id="main-content-body">Analizaremos su informacion y le estaremos contactando proximamente para gestionar su cotizacionn. Porfavor revise su correo para confirmar que se genero un numero de cotizacion</p>
+	</div>
+
+	<footer class="site-footer" id="footer">
+		<p class="site-footer__fineprint" id="fineprint">Copyright ©2022 | Todos los derechos reservados</p>
+	</footer>
+</body>
+</html>

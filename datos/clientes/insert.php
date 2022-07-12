@@ -1,6 +1,8 @@
 <?php  
-$connect = mysqli_connect("localhost", "root", "M@rio741", "performance");
-$sql = "INSERT INTO managers(FirstName,LastName,email) VALUES('".$_POST["FirstName"]."', '".$_POST["LastName"]."', '".$_POST["email"]."')";  
+require '../../datos/mysqlConnection.php';
+$connect = new mysqli($hostname, $username, $password, $databaseName);
+$sql = "INSERT INTO cliente(idCliente,nombre,primerApellido,segundoApellido,email,numeroTelefonico) VALUES"
+        . "('".$_POST["idCliente"]."', '".$_POST["nombre"]."', '".$_POST["primerApellido"]."''".$_POST["segundoApellido"]."', '".$_POST["email"]."''".$_POST["numeroTelefonico"]."')";  
 if(mysqli_query($connect, $sql))  
 {  	
      echo 'Data Inserted';  

@@ -9,7 +9,7 @@ $destinatario = "artinta506@gmail.com";
 
 // Datos de la cuenta de correo utilizada para enviar vía SMTP
 $smtpHost = "mail.artinta506.com";  // Dominio alternativo brindado en el email de alta 
-$smtpUsuario = "artin506@artinta506.com";  // Mi cuenta de correo
+$smtpUsuario = "info@artinta506.com";  // Mi cuenta de correo
 //$smtpClave = "M456ario";  // Mi contraseña
 $smtpClave = "M741ario";  // Mi contraseña
 

@@ -1,7 +1,7 @@
 <?php  
-
-	$connect = mysqli_connect("localhost", "root", "M@rio741", "performance");
-	$sql = "DELETE FROM managers WHERE id = '".$_POST["id"]."'";  
+require '../../datos/mysqlConnection.php';
+$connect = new mysqli($hostname, $username, $password, $databaseName);
+	$sql = "DELETE FROM cliente WHERE idCliente = '".$_POST["id"]."'";  
 	if(mysqli_query($connect, $sql))  
 	{  
 		echo 'Data Deleted';

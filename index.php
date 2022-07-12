@@ -107,9 +107,15 @@
                         <a href="#contact" class="w3-button w3-block">Cotizar</a>
                     </div>
 
+
                     <div class="w3-col s3">
-                        <a href="datos/cotizaciones/listaCotizaciones.php" class="w3-button w3-block">Lista cotizaciones</a>
+                        <a href="vistas/viewClients.php" class="w3-button w3-block">Ver  Clientes</a>
                     </div>
+
+                    <div class="w3-col s3">
+                        <a href="vistas/viewCotizaciones.php" class="w3-button w3-block">Ver cotizaciones</a>
+                    </div>
+
 
                 </div>
             </div>
@@ -118,27 +124,27 @@
             <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
 
                 <div class="w3-panel">
-                    <h1><b>MARKETING</b></h1>
+                    <h1><b>Galeria</b></h1>
                 </div>
 
                 <!-- Slideshow -->
                 <div class="w3-container">
                     <div class="w3-display-container mySlides">
-                        <img src="https://www.w3schools.com/w3images/coffee.jpg" style="width:100%">
+                        <img src="vistas/img/5.JPG" style="width:100%">
                         <div class="w3-display-topleft w3-container w3-padding-32">
-                            <span class="w3-white w3-padding-large w3-animate-bottom">Lorem ipsum</span>
+
                         </div>
                     </div>
                     <div class="w3-display-container mySlides">
-                        <img src="https://www.w3schools.com/w3images/workbench.jpg" style="width:100%">
+                        <img src="vistas/img/3.JPG" style="width:100%">
                         <div class="w3-display-middle w3-container w3-padding-32">
-                            <span class="w3-white w3-padding-large w3-animate-bottom">Klorim tipsum</span>
+
                         </div>
                     </div>
                     <div class="w3-display-container mySlides">
-                        <img src="https://www.w3schools.com/w3images/sound.jpg" style="width:100%">
+                        <img src="vistas/img/12.JPG" style="width:100%">
                         <div class="w3-display-topright w3-container w3-padding-32">
-                            <span class="w3-white w3-padding-large w3-animate-bottom">Blorum pipsum</span>
+
                         </div>
                     </div>
 
@@ -151,7 +157,7 @@
                             <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
                             <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
                             <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -159,27 +165,35 @@
                 <!-- Grid -->
                 <div class="w3-row w3-container">
                     <div class="w3-center w3-padding-64">
-                        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
+                        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Ofrecemos</span>
                     </div>
                     <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-                        <h3>Design</h3>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                    </div>
-
-                    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
-                        <h3>Branding</h3>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <h3>Disenho</h3>
+                        <p>Logramos hacer que cada tatuaje hecho por nosotros sea diferente al resto, para ello, usamos diferentes conceptos de composicion junto con las ideas de nuestros clientes.</p>
                     </div>
 
                     <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
-                        <h3>Consultation</h3>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <h3>Consultoria</h3>
+                        <p>Solo nos especializamos en Black & Grey y por esto no abarcamos todos los estilos, por esto, si detectamos una mejor experiancia con otros artistas Ajenos a Artinta506, amablemente los referimos a ellos, la buena atencion siempre sera nuesta mayor meta.</p>
                     </div>
 
-                    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16"  >
-                        <h3>Promises</h3>
-                        <p id=preguntas >Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+
+
+                    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+                        <h3>Tecnologia</h3>
+                        <p>Contamos con herramientas de edicion de imagen, ademas de software encargado de almacenar tanto los perfiles artisticos de nuestros clientes cuanto el expediendte de cada tatuaje. Tambien usamos maquinas de alto prestigio cuya tecnologia y fiabilidad nos ayudan a llegar a mejores resultados tanto en acabado cuanto a la sanacion de nuestras piezas.</p>
                     </div>
+
+
+
+                    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16"  >
+                        <h3>Alta Responsabilidad</h3>
+                        <p id=preguntas >El arte de tatuarse no solo debe ser una muy agradable experiencia para nuestros clientes, tambien es un proceso estetico que puede influir en el auto estima de las personas que los reciben, esto ademas del gran grado de responsabilidad sobre la salud de las mismas, y es por eso que seguimos todos los protocolos necesarios para garantizar un ambiente libre de elementos patogenos que puedan complicar la sanacion de nuestras creaciones.</p>
+                    </div>
+
+
+
+
                 </div>
 
 
@@ -326,44 +340,24 @@
                 <!-- Grid -->
                 <div class="w3-row-padding" id="about">
                     <div class="w3-center w3-padding-64">
-                        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+                        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Quienes somos</span>
                     </div>
 
-                    <div class="w3-third w3-margin-bottom">
+
+
+                    <div class="w3-center w3-padding-64" class="w3-third w3-margin-bottom">
                         <div class="w3-card-4">
-                            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="John" style="width:100%">
+                            <img src="vistas/img/9.JPG" alt="Mike" style="width:100%">
                             <div class="w3-container">
-                                <h3>Jane Doe</h3>
-                                <p class="w3-opacity">CEO & Founder</p>
+                                <h3>Mario Solano</h3>
+                                <p class="w3-opacity">Artista del tatuaje y duenho de Artinta506</p>
                                 <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
                                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="w3-third w3-margin-bottom">
-                        <div class="w3-card-4">
-                            <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Mike" style="width:100%">
-                            <div class="w3-container">
-                                <h3>Mike Ross</h3>
-                                <p class="w3-opacity">Art Director</p>
-                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="w3-third w3-margin-bottom">
-                        <div class="w3-card-4">
-                            <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Jane" style="width:100%">
-                            <div class="w3-container">
-                                <h3>John Doe</h3>
-                                <p class="w3-opacity">Designer</p>
-                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Contact -->
@@ -413,13 +407,21 @@
                     </div>
 
                     <div class="w3-section">
-                        <label>imagen referencia1</label>
+                        <label>Imagenes de referencia</label>
                         <input type="hidden" name="size" value="1000000">
-                        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" value= " "type="file" name="image1" >
-                        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" value= " "type="file" name="image2" >
+                        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" value= " "type="file" name="image1" required>
+                        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" value= " "type="file" name="image2" required>
+
+                    </div>
+                    <div class="w3-section">
+                        <label>Fotos de la parte de la parte de SU cuerpo a tatuar</label>
+                        <input type="hidden" name="size" value="1000000">
                         <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" value= " "type="file" name="image3" >
                         <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" value= " "type="file" name="image4" >
                     </div>
+
+
+
 
                     <div class="w3-section">
                         <label>Tamanho aproximado en centimetros</label>
@@ -442,17 +444,202 @@
                         <input type="checkbox" name="autorizo" value="1" required>autorizo a este sitio a usar mi informacion para los propositos de esta cotizacion.
                         <div>
                             <div class="w3-section">
-                                <input type="checkbox" name="leido" value="1"required >He ledio los terminos y condiciones.
+                                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16" onclick="document.getElementById('subscribe').style.display = 'block'"><i class="fa fa-rss"></i> Leer Terminos y condiciones</a>
+                                <!--TERMINOS Y CONDICIONESS -->
+                                <div id = "subscribe" class = "w3-modal">
+                                    <div class = "w3-modal-content w3-animate-zoom w3-padding-large">
+                                        <div class = "w3-container w3-white w3-center">
+                                            <i onclick = "document.getElementById('subscribe').style.display = 'none'" class = "fa fa-remove w3-button w3-xlarge w3-right w3-transparent"></i>
+                                            <h2 class = "w3-wide">Terminos Y Condiciones</h2>
+
+                                            <div class = "w3-container">
+                                                <hr>
+                                                <p>Debe tener al menos 18 años de edad. Es contra la ley del estado de Nueva York (Sección 260.21) tatuar a un menor, incluso con el consentimiento de los padres. De acuerdo con esta ley, tenemos una estricta política de No Menores. No solo debe tener 18 años, sino que también debe demostrarlo con una identificación con foto estatal o federal válida. Sin excepciones.
+
+
+
+                                                    No atendemos a niños, este es un ambiente estrictamente "no menores de 18 años", por lo que no se permiten niños en el estudio.
+
+
+
+                                                    Si viaja a Nueva York y planea pagar con su tarjeta, tenga en cuenta que a veces los bancos congelan las transacciones más grandes. Tenga opciones de pago de respaldo (efectivo, otra(s) tarjeta(s))
+
+
+
+                                                    ​​Para reservar una cita es necesario dejar un depósito según la tarifa del artista.
+
+
+
+                                                    Todos los depósitos no son reembolsables ni transferibles.
+
+                                                    La tienda requiere un aviso de al menos 72 horas para realizar cualquier cambio en su cita. Si no proporciona un aviso de 72 horas, perderá su depósito. Si cancela o no se presenta a su cita, perderá su depósito. Si necesita reprogramar su cita, puede transferir su depósito en UNA sola vez, siempre que avise con más de 72 horas de anticipación. Si no puede asistir a su cita reprogramada, perderá su depósito y necesitará un nuevo depósito para volver a reservar.
+
+
+
+                                                    Su depósito se mantendrá como garantía durante la duración de su tatuaje. Si su tatuaje requiere varias sesiones, el depósito se retendrá hasta la última sesión.
+
+
+
+                                                    Se puede reprogramar una cita a más tardar 6 meses después del depósito inicial. Si la cita no se reprograma para entonces, el depósito se perderá automáticamente.
+
+                                                    ​​
+
+                                                    El diseño de su tatuaje se basará en la información que le envió al artista antes de reservar la cita y su material de referencia, y no en una réplica exacta, ya que todos nuestros artistas proporcionan obras de arte originales.
+
+                                                    ​​
+
+                                                    La obra de arte se mostrará el día de su cita. Las citas se hacen en base al diseño solicitado originalmente. Se pueden hacer cambios menores el día de la cita. Si se solicitan cambios drásticos que requieran volver a dibujar todo el diseño o una parte mayor del mismo, se considera un proyecto separado y se requiere otro depósito.
+
+
+
+                                                    En caso de emergencia, su cita puede posponerse a la primera disponible en el horario de apertura que sea conveniente tanto para un artista como para un cliente.
+
+                                                    Si usted es de fuera de la ciudad y no puede venir ningún otro día, se le reembolsará su depósito.
+
+
+
+                                                    El artista puede detener tu sesión y programar una segunda si, en su opinión, es lo mejor que se puede hacer en ese momento (limitación de tiempo, tolerancia al dolor del cliente, cambio de tamaño del diseño).
+
+                                                    La segunda sesión se puede programar solo para el día siguiente o después de que el tatuaje haya cicatrizado por completo.
+
+                                                    Si no es local, tenga esto en cuenta cuando haga una cita.
+
+                                                    Asegúrese de no tener vacaciones planeadas (que impliquen nadar y tomar el sol) al menos 3 semanas después de su cita.
+
+                                                    ​​
+
+                                                    Evite beber alcohol 24 horas antes del tatuaje. Si está bajo la influencia del alcohol o las drogas, le pediremos que se vaya y perderá el depósito.
+
+
+
+                                                    Evite las bebidas estimulantes como red bull, etc. </p>
+
+                                                <p>A release form will be provided for you, this will ask you if you are under the influence of alcohol or drugs of any kind or pregnant. These are the main reasons for a tattoo to be refused. By signing our release form you have legally signed to say you don’t have any problems regarding your health.
+
+
+
+                                                    Avoid sun tanning and tanning beds. Get a good night's sleep prior to your appointment. The healthier you are before your session, the easier it will be for you and the artist to complete your session.
+
+
+
+                                                    If you have any type of skin diseases or scars a doctor's note is required confirming that tattooing is not dangerous for your health. 
+
+                                                    ​​
+
+                                                    Make sure that you eat before your appointment and stay hydrated during the appointment.
+
+                                                    ​​
+
+                                                    Occasionally, due to circumstances, the artist may fall behind schedule. This can be caused by a number of uncontrollable issues. If you are on a tight schedule, feel free to tell the artist about that beforehand.
+
+
+
+                                                    Artists can take a food break every 4hrs.
+
+
+
+                                                    ​​Cell phones of any kind must be shut off or put on silent before entering the studio. Cell phone conversations while getting a tattoo are not allowed. If there is an emergency,  just let your tattoo artist know that you need a phone break.
+
+                                                    ​​
+
+                                                    If you’d like to listen to music/watch videos on your phone/iPod during your appointment, please remember to bring headphones as to not distract the artist.
+
+
+
+                                                    No photo/video recording without permission.
+
+
+
+                                                    Remember to wear/bring appropriate clothing to your tattoo appointment (shorts, sweatpants, beaters, etc) so that the area being tattooed is easily accessible to the artist.
+
+
+
+                                                    No people are allowed to stay in the waiting area during tattooing.
+
+
+
+                                                    Service animals are not allowed in the tattooing area for sanitation purposes, but they can stay in the waiting area in case if their service is needed.
+
+
+
+                                                    We do not undertake offensive / racist tattoos.
+
+                                                    We are not responsible for the outcome after the tattoo is fully healed if the client didn't follow the aftercare instructions. 
+
+
+
+                                                    If any alterations are done to the original tattoo by the other tattooer, the artist is no longer responsible for any touch-ups or continuing that project.
+
+                                                    ​​
+
+                                                    Communication is important. If you have any questions before, during, or after your tattoo, feel free to ask.</p>
+                                                <input type="checkbox" name="leido" value="1"required onclick = "document.getElementById('subscribe').style.display = 'none'" >He ledio los terminos y condiciones.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                                 <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                     <button type="submit" name="upload"class="w3-button w3-block w3-black">Send</button>
                                     </form>
                                 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                 <!-- Footer -->
 
                                 <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-                          
-                                                    <h4>No aceptamos por el momento: <i class = "fa fa-credit-card w3-large"></i> <i class = "fa fa-cc-mastercard w3-large"></i> <i class = "fa fa-cc-amex w3-large"></i> <i class = "fa fa-cc-cc-visa w3-large"></i><i class = "fa fa-cc-paypal w3-large"></i></h4>
+
+                                    <h4>No aceptamos por el momento: <i class = "fa fa-credit-card w3-large"></i> <i class = "fa fa-cc-mastercard w3-large"></i> <i class = "fa fa-cc-amex w3-large"></i> <i class = "fa fa-cc-cc-visa w3-large"></i><i class = "fa fa-cc-paypal w3-large"></i></h4>
                                     <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Volver arriba</a>
                                     <div class="w3-xlarge w3-section">
                                         <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -481,6 +668,43 @@
                                         });
                                     }
                                 </script>
+
+
+                                <script>
+                                    // Slideshow
+                                    var slideIndex = 1;
+                                    showDivs(slideIndex);
+
+                                    function plusDivs(n) {
+                                        showDivs(slideIndex += n);
+                                    }
+
+                                    function currentDiv(n) {
+                                        showDivs(slideIndex = n);
+                                    }
+
+                                    function showDivs(n) {
+                                        var i;
+                                        var x = document.getElementsByClassName("mySlides");
+                                        var dots = document.getElementsByClassName("demodots");
+                                        if (n > x.length) {
+                                            slideIndex = 1
+                                        }
+                                        if (n < 1) {
+                                            slideIndex = x.length
+                                        }
+                                        ;
+                                        for (i = 0; i < x.length; i++) {
+                                            x[i].style.display = "none";
+                                        }
+                                        for (i = 0; i < dots.length; i++) {
+                                            dots[i].className = dots[i].className.replace(" w3-white", "");
+                                        }
+                                        x[slideIndex - 1].style.display = "block";
+                                        dots[slideIndex - 1].className += " w3-white";
+                                    }
+                                </script>
+
                             </div>
                             </body>
                             </html>

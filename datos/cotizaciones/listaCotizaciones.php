@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+ <------------------------   EN DESUSO-------------------------->
     <head>
         <title>Table with database</title>
 
@@ -22,6 +23,7 @@
         </style>
     </head>
     <body>
+        <?php require '../../vistas/header.php'; ?>  
         <table>
             <tr>
                 <th>link</th>
