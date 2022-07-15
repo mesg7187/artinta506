@@ -5,7 +5,7 @@ $connect = new mysqli($hostname, $username, $password, $databaseName);
 /////////////////BORRA IMAGENES//////////////////
 $sql = "DELETE FROM cotizacion WHERE idCotizacion = '" . $_POST["id"] . "'";
 if (mysqli_query($connect, $sql)) {
-    echo 'Data Deleted';
+    echo 'Cotizacion Deleted';
 } else {
 
     echo("Error description: " . mysqli_error($connect));
@@ -30,7 +30,7 @@ echo "Folder borrado";
 //////////////////BORRA ENTRADA IMAGENES////////////
 $sql = "DELETE FROM images WHERE idCotizacion = '" . $_POST["id"] . "'";
 if (mysqli_query($connect, $sql)) {
-    echo 'Data Deleted';
+    echo 'Entrada Imagen Deleted';
 } else {
 
     echo("Error description: " . mysqli_error($connect));
@@ -39,7 +39,7 @@ if (mysqli_query($connect, $sql)) {
 //////////////////BORRA NOTS COTIZACION////////////
 $sql = "DELETE FROM notasCotizacion WHERE idCotizacion = '" . $_POST["id"] . "'";
 if (mysqli_query($connect, $sql)) {
-    echo 'Data Deleted';
+    echo 'Notas de cotizacion Deleted';
 } else {
 
     echo("Error description: " . mysqli_error($connect));

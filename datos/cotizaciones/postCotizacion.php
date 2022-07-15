@@ -32,8 +32,10 @@ $body = "Un saludo de parte de Artinta506,    "
         . ""
         . "" . $descripcionTatuaje;
 
-
-
+$email2 = "artinta506@gmail.com";
+$subejct2="Cotizacion".$idCotizacion. " para El cliente :".$nombre." ".$primerApellido;
+$body2="https://artinta506.com/vistas/viewCotizacion.php?cotizacion=".$idCotizacion;
+ // header("Location: /mailer/mailCotizacion.php?email=".$email."&subject=".$subject."&body=".$body."&email2=".$email2."&subject2=".$subejct2."&body2=".$body2);
 
 
 //////////INSERT CLIENTE /////////////////
@@ -57,7 +59,7 @@ $sql = "INSERT INTO cotizacion(idCotizacion,idCliente, estado,fechaHoraCreacion,
 
 if (mysqli_query($conn, $sql)) {
    // echo 'COTIZACION GUARDADA';
-   header("Location: /mailer/mailCotizacion.php?email=".$email."&subject=".$subject."&body=".$body);
+   header("Location: /mailer/mailCotizacion.php?email=".$email."&subject=".$subject."&body=".$body."&email2=".$email2."&subject2=".$subejct2."&body2=".$body2);
 } else {
 
    // echo("COTIZACION NO GURADADA CON ERROR->" . mysqli_error($conn));

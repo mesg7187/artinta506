@@ -4,7 +4,7 @@ require '../../datos/mysqlConnection.php';
 $connect = new mysqli($hostname, $username, $password, $databaseName);
 $output = '';
 $q = $_GET['q'];
-$sql = "SELECT * FROM cliente WHERE email = '" . $q . "'";
+$sql = "SELECT * FROM cliente WHERE nombre = '" . $q . "'";
 $result = mysqli_query($connect, $sql);
 $output .= '  
       <div class="table-responsive">  

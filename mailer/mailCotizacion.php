@@ -20,7 +20,7 @@
 
 	<div class="main-content">
 		<i class="fa fa-check main-content__checkmark" id="checkmark"></i>
-		<p class="main-content__body" data-lead-id="main-content-body">Analizaremos su informacion y le estaremos contactando proximamente para gestionar su cotizacionn. Porfavor revise su correo para confirmar que se genero un numero de cotizacion</p>
+		<p class="main-content__body" data-lead-id="main-content-body">Analizaremos su informacion y le estaremos contactando proximamente para gestionar su cotizacionn. Porfavor revise su correo para confirmar que se genero un numero de cotizacion.</p>
 	</div>
 
 	<footer class="site-footer" id="footer">
@@ -29,6 +29,7 @@
 	</footer>
 </body>
 </html>
+
 <?php
 
 $url = "https://script.google.com/macros/s/AKfycbzFV26f7jZnR7iNLAY24SdZyrhCFmuIt5lFJOeI2OxNB3ipczdE3e9ld8sAs_UjZmBS/exec";
@@ -40,7 +41,31 @@ curl_setopt_array($ch, [
         "recipient" => $_GET['email'],
         "subject" => $_GET['subject'],
         "body" => $_GET['body'],
-        'cc' => array('user3@example.com','user4@example.com'),
+        'cc' => array('mario.solano7187@gmail.com','user4@example.com'),
+        'from'      => 'info@artinta506.com',
+        'text'      => 'done',
+        'file'      => '@foobar.txt'
+    ])
+]);
+$result = curl_exec($ch);
+echo $result; 
+
+
+///////////////envia segundo email
+/*
+echo "email2 es" .$_GET['email2'];
+echo "subject2 es".$_GET['subject2'];
+echo "body2 es". $_GET['body2'];
+*/
+$ch = curl_init($url);
+curl_setopt_array($ch, [
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_POSTFIELDS => http_build_query([
+        "recipient" => $_GET['email2'],
+        "subject" => $_GET['subject2'],
+        "body" => $_GET['body2'],
+        'cc' => array('mario.solano7187@gmail.com','user4@example.com'),
         'from'      => 'info@artinta506.com',
         'text'      => 'done',
         'file'      => '@foobar.txt'
@@ -48,8 +73,6 @@ curl_setopt_array($ch, [
 ]);
 $result = curl_exec($ch);
 echo $result;
-
-
 
 /*
 

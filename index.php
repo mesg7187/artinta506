@@ -101,7 +101,7 @@
                     </div><!-- comment -->
 
                     <div class="w3-col s3">
-                        <a href="#about" class="w3-button w3-block">About</a>
+                        <a href="#about" class="w3-button w3-block">Acerca</a>
                     </div>
                     <div class="w3-col s3">
                         <a href="#contact" class="w3-button w3-block">Cotizar</a>
@@ -168,7 +168,7 @@
                         <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Ofrecemos</span>
                     </div>
                     <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-                        <h3>Disenho</h3>
+                        <h3>Diseño</h3>
                         <p>Logramos hacer que cada tatuaje hecho por nosotros sea diferente al resto, para ello, usamos diferentes conceptos de composicion junto con las ideas de nuestros clientes.</p>
                     </div>
 
@@ -203,31 +203,31 @@
 
                 <button class="accordion">¿Cómo reservo una cita?</button>
                 <div class="panel">
-                    <p>Si desea reservar una cita para tatuarse en nuestro estudio, vaya a la *Página de reservas* en el sitio y complete el formulario de envío. Esto incluirá tu información de contacto, el artista al que te gustaría tatuarte y una descripción breve pero específica de tu idea de tatuaje. Debido al alto volumen de envíos, espere hasta 2-3 semanas para recibir una respuesta.</p>
+                    <p>Si desea reservar una cita para tatuarse en nuestro estudio, vaya a la "Cotizar" en el sitio y complete el formulario de envío. Esto incluirá tu información de contacto y una descripción breve pero específica de tu idea de tatuaje. Debido al alto volumen de envíos, espere hasta 2-3 dias para recibir una respuesta.</p>
                 </div>
 
                 <button class="accordion">¿Qué edad debo tener para hacerme un tatuaje?</button>
                 <div class="panel">
-                    <p>Debe tener al menos 18 años de edad. Es contra la ley de Costa Rica tatuar a un menor.De acuerdo con esta ley, tenemos una estricta política de No Menores. No solo debe tener 18 años, sino que también debe demostrarlo con una identificación con foto válida. Sin excepciones.</p>
+                    <p>Debe tener al menos 21 años de edad. Es contra la ley de Costa Rica tatuar a un menor.De acuerdo con esta ley, tenemos una estricta política de No Menores. No solo debe tener 21 años, sino que también debe demostrarlo con una identificación con foto válida. Sin excepciones.</p>
                 </div>
 
-                <button class="accordion">¿Cuánto cobra usted?</button>
+                <button class="accordion">¿Cuánto cobra?</button>
                 <div class="panel">
                     <p>Cobramos una tarifa por hora de tatuaje, que se aplica por cada pieza en una sesión. Por ejemplo, si solicita un diseño adicional en otra parte del cuerpo durante la misma sesión, se le cobrarán ambos individualmente. Después de enviar su solicitud de cita, el artista se comunicará con usted con sus tarifas individuales y horarios disponibles.</p>
                 </div>
 
                 <button class="accordion">¿Se requiere un depósito para reservar una cita?</button>
                 <div class="panel">
-                    <p>Una vez que usted y el artista hayan resuelto todos los detalles relacionados con la programación de su cita y su idea de tatuaje, se le pedirá que envíe un depósito equivalente a una hora de tatuaje. El depósito se aplicará al total final de la cita. Para obtener más información sobre los depósitos, consulte nuestros términos y condiciones.</p>
+                    <p>Una vez que usted y el artista hayan resuelto todos los detalles relacionados con la programación de su cita y su idea de tatuaje, se le pedirá que envíe un depósito equivalente a una hora de tatuaje ($30). El depósito se aplicará al total final de la cita. Para obtener más información sobre los depósitos, consulte nuestros términos y condiciones.</p>
                 </div><!-- comment -->
 
                 <button class="accordion">Envié una solicitud de cita y no he recibido respuesta.</button>
                 <div class="panel">
-                    <p>Debido a un gran volumen de solicitudes, es posible que necesitemos algunos dias para procesar todos los envíos. Si no ha recibido noticias nuestras en 2 semanas, no dude en enviar un correo electrónico de seguimiento.</p>
+                    <p>Debido a un gran volumen de solicitudes, es posible que necesitemos algunos dias para procesar todas las cotizaciones. Si no ha recibido noticias nuestras en 2 dias, no dude en enviar un correo electrónico de seguimiento.(artinta506@gmail.com)</p>
                 </div><!-- comment -->
 
 
-                <button class="accordion">¿Dónde te encuentras?</button>
+                <button class="accordion">¿Dónde se encuentra Artinta506?</button>
                 <div class="panel">
                     <p>Nuestro estudio está ubicado en Heredia cerca de la ESPH. Una vez que haya reservado una cita, le enviaremos la dirección junto con la información de preparación para su cita.</p>
                 </div>  
@@ -235,22 +235,22 @@
 
                 <button class="accordion">¿Qué formas de pago aceptan?</button>
                 <div class="panel">
-                    <p>Aceptamos tanto tarjetas de crédito como efectivo. Si es necesario, se aceptará PayPal con una tarifa adicional adjunta.</p>
+                    <p>Aceptamos tanto deposito, efectivo o sinpe movil. No aceptamos Targetas por el momento</p>
                 </div>
 
                 <button class="accordion">¿Qué debo mencionar al describir el diseño de mi tatuaje?</button>
                 <div class="panel">
-                    <p>Cuando explique el diseño de su tatuaje, sea lo más detallado posible. Por ejemplo, si quieres un tatuaje de una flor, dinos qué tipo de flor es. Sea explícito en su descripción, pero trate de ser breve. Envíanos las fotos de referencia que tengas para el tatuaje. También especifica si quieres tu tatuaje a color o en blanco y negro (no todos los artistas hacen ambas cosas). Indícanos dónde pretendes hacerte el tatuaje, así como el tamaño aproximado.</p>
+                    <p>Cuando explique el diseño de su tatuaje, sea lo más detallado posible. Por ejemplo, si quieres un tatuaje de una flor, dinos qué tipo de flor es. Sea explícito en su descripción, pero trate de ser breve. Envíanos las fotos de referencia que tengas para el tatuaje.Indícanos dónde pretendes hacerte el tatuaje, así como el tamaño aproximado en centimetros.</p>
                 </div>
 
                 <button class="accordion">¿Qué tipo de estilos haces?</button>
                 <div class="panel">
-                    <p>Cada uno de nuestros artistas se especializa en diferentes estilos. Para ver ejemplos de su trabajo, consulte la página de *Artistas* para ver sus galerías individuales.</p>
+                    <p>Linea fine e hyperfina (letras, simbolos etc) y realismo black & grey(un lavado de grises utilizando solo tinta negra y el tono natural de la piel).</p>
                 </div>
 
                 <button class="accordion">Encontré un diseño en internet y lo quiero como tatuaje. ¿Harian eso?</button>
                 <div class="panel">
-                    <p>Nuestros artistas solo trabajan con diseños originales; sin embargo, ciertamente pueden usar el diseño que encontraste como referencia para crear un diseño personalizado.</p>
+                    <p>Solo trabajamos con diseños originales; sin embargo, ciertamente pueden usar el diseño que encontraste como referencia para crear un diseño personalizado.</p>
                 </div><!-- comment -->
 
                 <button class="accordion">¿Cobran una tarifa por dibujar mi tatuaje?</button>
@@ -272,7 +272,7 @@
 
                 <button class="accordion">¿Necesitaré más de una sesión?</button>
                 <div class="panel">
-                    <p>Dependiendo del tamaño del tatuaje, el artista puede necesitar más de una sesión para completar la pieza. El artista también puede decidir interrumpir la sesión durante la cita (debido a limitaciones de tiempo, tolerancia al dolor de los clientes y/o cambios de diseño). Si se requieren varias sesiones, el artista continuará al día siguiente dependiendo de la disponibilidad, o deberá esperar hasta que el tatuaje esté completamente curado (2 a 4 semanas). Si no es local, tenga en cuenta esta posibilidad al programar su cita.</p>
+                    <p>Dependiendo del tamaño del tatuaje, el artista (Mario Solano) puede necesitar más de una sesión para completar la pieza. El artista también puede decidir interrumpir la sesión durante la cita (debido a limitaciones de tiempo, tolerancia al dolor de los clientes y/o cambios de diseño). Si se requieren varias sesiones, el artista continuará al día siguiente dependiendo de la disponibilidad, o deberá esperar hasta que el tatuaje esté completamente curado (2 a 4 semanas). Si no vive cerca, tenga en cuenta esta posibilidad al programar su cita.</p>
                 </div>
 
                 <button class="accordion">¿Qué pasa si no puedo llegar a mi cita?</button>
@@ -282,12 +282,12 @@
 
                 <button class="accordion">¿Cuál es su política sobre circunstancias de emergencia/cancelaciones de última hora?</button>
                 <div class="panel">
-                    <p>Si su cita se pospone debido a circunstancias fuera de nuestro control (es decir, clima, enfermedad extrema, etc.), el artista le ofrecerá la próxima cita disponible más temprana en sus horarios.</p>
+                    <p>Si su cita se pospone debido a circunstancias fuera de nuestro control (es decir, clima, enfermedad extrema, etc.), el artista (Mario Solano) le ofrecerá la próxima cita disponible más temprana en sus horarios.</p>
                 </div><!-- comment -->
 
                 <button class="accordion">¿Puede traer un(a) amiga(o)?</button>
                 <div class="panel">
-                    <p>Si bien su amigo (o familiar) puede acompañarlo a la cita y regresar para recogerlo, no podemos acomodar a más personas en el estudio durante el proceso de tatuaje.</p>
+                    <p>Preferimos siempre atender solo a la(s) persona(s) que se va(n) a tatuar, sin embargo sientase libre de explicar su situacion y con gusto le tomaremos en cuenta.</p>
                 </div><!-- comment -->
 
 
@@ -298,24 +298,20 @@
 
                 <button class="accordion">¿Qué pasa si necesito un retoque?</button>
                 <div class="panel">
-                    <p>Antes de decidir si su tatuaje necesita un retoque, espere un mínimo de un mes para que se cure por completo. Una vez que haya pasado ese tiempo, envíenos un correo electrónico directamente con una foto de su tatuaje y las inquietudes que tiene. Su artista responderá y ofrecerá un tiempo para realizar el retoque si lo considera necesario. El primer retoque programado es gratuito. Más retoques o alteraciones requerirán tarifas adicionales.
-                        Si el otro tatuador realiza modificaciones al tatuaje original, el artista ya no es responsable de los retoques ni de continuar con ese proyecto.</p>
+                    <p>Antes de decidir si su tatuaje necesita un retoque, espere un mínimo de un mes para que se cure por completo. Una vez que haya pasado ese tiempo, envíenos un correo electrónico directamente con una foto de su tatuaje y las inquietudes que tiene. Responderemos y ofreceremos un tiempo para realizar el retoque si lo considera necesario. El primer retoque programado es gratuito. Más retoques o alteraciones requerirán tarifas adicionales.
+                        Si otro tatuador realiza modificaciones al tatuaje original, el artista ya no es responsable de los retoques ni de continuar con ese proyecto.Tenga en cuenta que tiene 6 meses para hacer su reclamo, despues de este plazo no se haran retoques</p>
                 </div>
 
 
                 <button class="accordion">¿Qué debo hacer después de terminar mi tatuaje?</button>
                 <div class="panel">
-                    <p>Consulte las instrucciones de cuidado posterior para obtener más detalles.</p>
+                    <p>Consulte las instrucciones de cuidado posterior para obtener más detalles con el artista encargado (Mario Solano).</p>
                 </div>
 
-                <button class="accordion">¿Dónde me dolerá menos mi tatuaje?</button>
-                <div class="panel">
-                    <p>Consulte esta tabla de tolerancia al dolor para obtener más detalles.</p>
-                </div>
 
                 <button class="accordion">¿Cómo afecta el tono de la piel a la coloración del tatuaje?</button>
                 <div class="panel">
-                    <p>Después de la curación, ciertos colores pueden aparecer de manera diferente a lo esperado con tonos de piel más oscuros. Consulte con su artista del tatuaje sobre las opciones de color específicas que pueda tener para su tatuaje.</p>
+                    <p>Después de la curación, ciertos colores pueden aparecer de manera diferente a lo esperado con tonos de piel más oscuros. Consulte con su artista del tatuaje (Mario Solano)sobre las opciones de color específicas que pueda tener para su tatuaje.</p>
                 </div><!-- comment -->
 
                 <button class="accordion">¿Se desvanecerá/cambiará mucho mi tatuaje?</button>
@@ -330,9 +326,9 @@
                 </div>
 
 
-                <button class="accordion">Quiero hacerme un tatuaje. ¿Debo enviar una solicitud de reserva o enviar un correo electrónico directamente?</button>
+                <button class="accordion">Quiero hacerme un tatuaje. ¿Debo cotizar o enviar un correo electrónico directamente?</button>
                 <div class="panel">
-                    <p>Envíe una solicitud de reserva primero a través de nuestro sitio web. Cualquier otra comunicación se realizará por correo electrónico.</p>
+                    <p>Envíe una cotizacion primero a través de nuestro sitio web. Cualquier otra comunicación se realizará por correo electrónico.</p>
                 </div><!-- comment -->
 
 
@@ -350,8 +346,11 @@
                             <img src="vistas/img/9.JPG" alt="Mike" style="width:100%">
                             <div class="w3-container">
                                 <h3>Mario Solano</h3>
-                                <p class="w3-opacity">Artista del tatuaje y duenho de Artinta506</p>
-                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                                <p class="w3-opacity">Artista del tatuaje y dueño de Artinta506</p>
+                                <p class="w3-opacity">Ingeniero por profecion y dibujante por vocacion vengo a ofrecer mis servicios de artista del tatuaje.</p>
+                                <p>Despues de muchos años en el estudio en dibujo anatomico humano y mas de 2 añs tatuando, me dispongo a abrir Artinta506,</p>
+                                <p>con el fin de dar una propuesta diferente, tanto en trabajos de linea fina como trabajos de realismo black and grey.</p>
+                                
                                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
                             </div>
                         </div>
@@ -424,7 +423,7 @@
 
 
                     <div class="w3-section">
-                        <label>Tamanho aproximado en centimetros</label>
+                        <label>Tamaño aproximado en centimetros</label>
                         <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="tamanho" required>
                     </div><!-- comment -->
                     <div class="w3-section">
@@ -643,7 +642,7 @@
                                     <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Volver arriba</a>
                                     <div class="w3-xlarge w3-section">
                                         <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                                        <i class="fa fa-instagram w3-hover-opacity"></i>
+                                        <i class="fa fa-instagram w3-hover-opacity"><a href="https://www.instagram.com/accounts/login/?next=/artinta506/">Artinta506</a></i>
                                     </div>
                                     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
                                 </footer>

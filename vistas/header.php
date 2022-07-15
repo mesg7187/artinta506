@@ -92,7 +92,7 @@
             <div >
                 <div class="w3-row w3-large w3-light-grey">
                     <div class="w3-col s3">
-                        <a href="#" class="w3-button w3-block">Home</a>
+                        <a href="../index.php" class="w3-button w3-block">Home</a>
                     </div>
 
                     <div class="w3-col s3">
@@ -102,11 +102,7 @@
                     <div class="w3-col s3">
                         <a href="viewCotizaciones.php" class="w3-button w3-block">Ver cotizaciones</a>
                     </div>
-						<div class="dropdown-menu">
-							<h6 class="dropdown-header">System Administration</h6>
-							<a class="dropdown-item" href="user.php">Users</a>
-							<a class="dropdown-item" href="employee.php">Employees</a>
-							</div>		
+	
                     
                 </div>
             </div>

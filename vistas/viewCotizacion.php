@@ -97,11 +97,11 @@
                     <hr>
                 </div><!-- comment -->
 
-                                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Facebook</b></h5>
-                        <?php echo $facebook ?>
-                        <hr>
-                    </div><!-- comment -->
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Facebook</b></h5>
+                    <?php echo $facebook ?>
+                    <hr>
+                </div><!-- comment -->
                 <hr>
                 <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-black w3-large  "></i><?php echo $cedula ?></p>
                 <p><i class="fa fa-home fa-fw w3-margin-right w3-black w3-large "></i><?php echo $provincia ?></p></p>
@@ -113,7 +113,7 @@
                         <input  class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" value="<?php echo $fechaHoraCreacion ?>"required>          
                     <p><label><i class="fa fa-calendar-o"></i>Fecha de atendido</label></p>
                     <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckOut" value="<?php echo $fechaHoraRespuesta ?> required>    
-                    <p class="w3-large"  ><b><i class=" idCotizacion w3-center w3-text-white"></i>ID   :</b><?php echo $idCotizacion ?> </p>
+                           <p class="w3-large"  ><b><i class=" idCotizacion w3-center w3-text-white"></i>ID   :</b><?php echo $idCotizacion ?> </p>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Descripcion del Tatuaje</b></h5>
                         <?php echo $descripcionTatuaje; ?>
@@ -192,7 +192,7 @@
                 $result = mysqli_query($conn, "SELECT * FROM notasCotizacion WHERE idCotizacion=" . $idCotizacion);
 
                 while ($row = mysqli_fetch_array($result)) {
-
+                    $val = $row['idnotasCotizacion'];
                     $output = "<div class='w3-card-4 w3-margin w3-white'  ><div class = 'w3-container'>
                 <hr>
 
@@ -206,7 +206,7 @@
                 <h4><strong id = 'contact'>Descripcion siguiente sesion</strong></h4>
                 <h6 class='w3-text-teal'><i class='fa fa-calendar fa-fw w3-margin-right'></i>" . $row['fechaSiguiente'] . " </h6>
                 <p>" . $row['descripcionSiguiente'] . " </p>
-                <p><button class = 'w3-button w3-padding-large w3-red w3-border' onclick = 'document.getElementById('subscribe').style.display = 'block'>Borrar</button></p>
+                <p><button class = 'w3-button w3-padding-large w3-red w3-border' onclick='myFunction($val)'>Borrar</button></p>
             </div></div>" . $output;
                 }
                 echo $output;
@@ -381,8 +381,31 @@
                         alert(data);
                         // fetch_data();
                     }
-                })
+                });
             }
+
+
+
+            function myFunction(id) {
+                var id = id;
+               
+                if (confirm("Are you sure you want to delete this?"))
+                {
+                    $.ajax({
+                        url: "../datos/cotizaciones/notasCotizaciones/delete.php",
+                        method: "POST",
+                        data: {id: id},
+                        dataType: "text",
+                        success: function (data) {
+                             //alert("voy por aqui");
+                            alert(data);
+                            fetch_data();
+                        }
+                    });
+                }
+            }
+
+
         </script>
 
 
